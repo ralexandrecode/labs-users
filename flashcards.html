@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards Amazon Lex</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card .answer { display: none; }
+    .card.open .answer { display: block; }
+    .card:hover { background-color: #eef6ff; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="questoes.html">Questões</a>
+    <a href="mnemonicos.html">Mnemônicos</a>
+  </nav>
+
+  <h1>📚 Flashcards de Memorização</h1>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <p><strong>❓ O que é o Amazon Lex?</strong></p>
+    <p class="answer">Serviço de chatbots com NLU + ASR, usado também pela Alexa.</p>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <p><strong>🔧 O que são Intents, Slots e Utterances?</strong></p>
+    <p class="answer">Intent: objetivo; Slot: dado necessário; Utterance: variações da frase.</p>
+  </div>
+</body>
+</html>
